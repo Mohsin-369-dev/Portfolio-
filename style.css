@@ -290,16 +290,19 @@ ul, ol {
   gap: 12px;
 }
 
-.logo-symbol {
-  width: 40px;
-  height: 40px;
-  display: grid;
-  place-items: center;
-  transition: transform var(--transition-normal);
+.brand-text {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity var(--transition-fast);
 }
 
-.brand-logo:hover .logo-symbol {
-  transform: rotate(-8deg) scale(1.08);
+.brand-logo:hover .brand-text {
+  opacity: 0.8;
 }
 
 .nav-links {
