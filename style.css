@@ -605,7 +605,44 @@ ul, ol {
   font-weight: 400;
   color: var(--text-secondary);
   max-width: 580px;
-  margin: 0 auto 36px;
+  margin: 0 auto 20px;
+}
+
+.hero-social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.hero-social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  background: rgba(22, 16, 46, 0.75);
+  border: 1px solid rgba(168, 85, 247, 0.28);
+  border-radius: var(--radius-full);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  backdrop-filter: blur(10px);
+  transition: all var(--transition-fast);
+}
+
+.hero-social-btn svg {
+  width: 16px;
+  height: 16px;
+  color: var(--accent-light);
+}
+
+.hero-social-btn:hover {
+  background: rgba(36, 26, 74, 0.95);
+  border-color: var(--accent-light);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.3);
+  color: #ffffff;
 }
 
 /* Scroll Cue */
