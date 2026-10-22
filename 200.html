@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Software Engineer & UI/UX Designer</title>
+  <meta name="description"
+    content="Portfolio of a Software Engineer and UI/UX Designer crafting meaningful, delightful digital products with precision, modern aesthetics, and accessible design.">
+  <meta name="keywords" content="Software Engineer, UI/UX Designer, Frontend Developer, Web Development, Portfolio">
+  <meta name="author" content="Portfolio">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Portfolio — Software Engineer & UI/UX Designer">
+  <meta property="og:description"
+    content="Judges a book by its cover... Crafting meaningful and delightful digital products.">
+  <meta property="og:image" content="assets/avatar.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23130d24' stroke='%238b5cf6' stroke-width='4'/><path d='M35 32h30L45 50l20 18H35' fill='none' stroke='%23c084fc' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+</head>
+
+<body>
+  <!-- Ambient Cosmic Lighting -->
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-middle" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- Interactive Spotlight Follower -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="header" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Home">
+        <div class="logo-symbol">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="40" rx="10" fill="url(#logo-grad)" fill-opacity="0.15" stroke="url(#logo-stroke)"
+              stroke-width="1.5" />
+            <path d="M14 13H26L18 20.5L26 27H14" stroke="#D8B4FE" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <circle cx="20" cy="20" r="1.5" fill="#A855F7" filter="drop-shadow(0 0 4px #A855F7)" />
+            <defs>
+              <linearGradient id="logo-grad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#9333EA" />
+                <stop offset="1" stop-color="#6366F1" />
+              </linearGradient>
+              <linearGradient id="logo-stroke" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#C084FC" stop-opacity="0.8" />
+                <stop offset="1" stop-color="#818CF8" stop-opacity="0.3" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navMenu">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Work</a>
+        <a href="#lab" class="nav-link">Lab</a>
+        <a href="#contact" class="nav-btn">Contact</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-content">
+        <!-- Greeting Badge -->
+        <div class="greeting-badge animate-fade-in">
+          <span class="wave-icon">👋</span>
+          <span class="badge-text">Hello! I'm <strong class="badge-name">Mohsin Ali Nandoliya</strong></span>
+        </div>
+
+        <!-- 3D Avatar Centerpiece with Glowing Halo -->
+        <div class="avatar-stage animate-fade-in-up">
+          <div class="halo-ring"></div>
+          <div class="halo-blur"></div>
+          <div class="avatar-frame">
+            <img src="assets/avatar.jpg" alt="Developer Memoji Avatar with Laptop" class="avatar-img" width="240"
+              height="240" fetchpriority="high">
+          </div>
+          <!-- Orbiting subtle badges -->
+          <div class="status-chip chip-left" title="Available for projects">
+            <span class="pulse-dot"></span> Available for Work
+          </div>
+          <div class="status-chip chip-right" title="Design System & Code">
+            <span class="chip-icon">⚡</span> 3+ Years Exp
+          </div>
+        </div>
+
+        <!-- Headline & Philosophy Tagline -->
+        <div class="hero-headlines animate-fade-in-up">
+          <p class="hero-pretitle">A Designer who</p>
+          <h1 class="hero-title">
+            Judges a book<br>
+            by its <span class="highlight-cover">cover<span class="dots">...</span></span>
+          </h1>
+          <p class="hero-subtitle">Because if the cover does not impress you what else can?</p>
+        </div>
+
+        <!-- Scroll Down Cue -->
+        <a href="#about" class="scroll-cue" aria-label="Scroll down to About section">
+          <div class="mouse-icon">
+            <div class="mouse-wheel"></div>
+          </div>
+          <span>Scroll down</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- About & Software Engineer Headline Section -->
+    <section class="section about-section" id="about">
+      <div class="container about-container">
+        <div class="role-intro-card glass-panel">
+          <div class="intro-headline-group">
+            <h2 class="role-title">
+              I'm a Software Engineer<span class="cursor-typing">|</span>
+            </h2>
+            <div class="company-badge-wrap">
+              <span class="status-lead">Currently a Software Engineer at</span>
+              <span class="company-pill">
+                <svg class="company-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z" />
+                </svg>
+                Facebook
+              </span>
+            </div>
+          </div>
+
+          <p class="bio-text">
+            A self-taught UI/UX designer, functioning in the industry for 3+ years now. Crafting meaningful and
+            delightful digital products that create equilibrium between user needs and business goals.
+          </p>
+
+          <div class="metrics-grid">
+            <div class="metric-item">
+              <div class="metric-number">3+</div>
+              <div class="metric-label">Years of Crafting</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-number">20+</div>
+              <div class="metric-label">Digital Products</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-number">100k+</div>
+              <div class="metric-label">Active End Users</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career Milestones</span>
+          <h2 class="section-title">Work Experience</h2>
+          <p class="section-desc">Delivering high-impact digital experiences across cross-functional squads.</p>
+        </div>
+
+        <div class="experience-grid">
+          <!-- Card 1 -->
+          <article class="exp-card glass-panel" data-glow>
+            <div class="exp-card-inner">
+              <div class="exp-icon-box">
+                <div class="icon-3d bookmark-3d">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="exp-card-body">
+                <h3 class="exp-title">CIB on the Mobile</h3>
+                <p class="exp-subtitle">Lead Mobile Frontend & UI Architect</p>
+                <p class="exp-description">
+                  Take your client onboard seamlessly by our intuitive tool with ease. Streamlined navigation flows and
+                  reduced onboarding drop-offs by 42%.
+                </p>
+                <a href="#contact" class="btn-learn-more" aria-label="Learn more about CIB on the Mobile project">
+                  <span>LEARN MORE</span>
+                  <svg viewBox="0 0 20 20" fill="currentColor" class="arrow-icon">
+                    <path fill-rule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="exp-card glass-panel" data-glow>
+            <div class="exp-card-inner">
+              <div class="exp-icon-box">
+                <div class="icon-3d sphere-3d">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M3.6 9h16.8M3.6 15h16.8" />
+                    <path d="M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18" />
+                  </svg>
+                </div>
+              </div>
+              <div class="exp-card-body">
+                <h3 class="exp-title">CIB on the Mobile</h3>
+                <p class="exp-subtitle">Design System & Design Tokens</p>
+                <p class="exp-description">
+                  Take your client onboard seamlessly by our intuitive tool with ease. Standardized component
+                  architecture and token pipeline for 50+ engineers.
+                </p>
+                <a href="#contact" class="btn-learn-more" aria-label="Learn more about Design Systems experience">
+                  <span>LEARN MORE</span>
+                  <svg viewBox="0 0 20 20" fill="currentColor" class="arrow-icon">
+                    <path fill-rule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="exp-card glass-panel" data-glow>
+            <div class="exp-card-inner">
+              <div class="exp-icon-box">
+                <div class="icon-3d cup-3d">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+                    <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+                    <line x1="6" y1="1" x2="6" y2="4" />
+                    <line x1="10" y1="1" x2="10" y2="4" />
+                    <line x1="14" y1="1" x2="14" y2="4" />
+                  </svg>
+                </div>
+              </div>
+              <div class="exp-card-body">
+                <h3 class="exp-title">CIB on the Mobile</h3>
+                <p class="exp-subtitle">Micro-Interactions & UX Polish</p>
+                <p class="exp-description">
+                  Take your client onboard seamlessly by our intuitive tool with ease. Implemented fluid 60fps gesture
+                  handling and tactile feedback.
+                </p>
+                <a href="#contact" class="btn-learn-more" aria-label="Learn more about Micro-Interactions experience">
+                  <span>LEARN MORE</span>
+                  <svg viewBox="0 0 20 20" fill="currentColor" class="arrow-icon">
+                    <path fill-rule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="exp-card glass-panel" data-glow>
+            <div class="exp-card-inner">
+              <div class="exp-icon-box">
+                <div class="icon-3d prism-3d">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                    <polyline points="2 17 12 22 22 17" />
+                    <polyline points="2 12 12 17 22 12" />
+                  </svg>
+                </div>
+              </div>
+              <div class="exp-card-body">
+                <h3 class="exp-title">CIB on the Mobile</h3>
+                <p class="exp-subtitle">Performance & Core Web Vitals</p>
+                <p class="exp-description">
+                  Take your client onboard seamlessly by our intuitive tool with ease. Engineered sub-second responsive
+                  views and accessibility compliance.
+                </p>
+                <a href="#contact" class="btn-learn-more" aria-label="Learn more about Performance engineering">
+                  <span>LEARN MORE</span>
+                  <svg viewBox="0 0 20 20" fill="currentColor" class="arrow-icon">
+                    <path fill-rule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Philosophy & Orbiting Tech Stack Constellation Section -->
+    <section class="section orbit-section" id="lab">
+      <div class="container">
+        <div class="manifesto-card glass-panel">
+          <p class="manifesto-quote">
+            I'm currently looking to join a <span class="highlight-text">cross-functional team</span> that values
+            improving lives through accessible design.
+          </p>
+        </div>
+
+        <!-- Tech Stack Orbit Visualization -->
+        <div class="orbit-stage">
+          <div class="orbit-glow-core"></div>
+
+          <!-- Central Emblem Core -->
+          <div class="orbit-center">
+            <div class="orbit-core-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="22" fill="#18112C" stroke="#A855F7" stroke-width="2" />
+                <path d="M16 16H32L21 26L32 34H16" stroke="#D8B4FE" stroke-width="3" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="orbit-rings">
+              <div class="ring ring-1"></div>
+              <div class="ring ring-2"></div>
+              <div class="ring ring-3"></div>
+            </div>
+          </div>
+
+          <!-- Interactive Tool Badges in Constellation Grid -->
+          <div class="tools-cloud">
+            <div class="tool-pill" data-tech="Figma">
+              <span class="tool-dot figma-dot"></span>
+              <span class="tool-name">Figma</span>
+            </div>
+            <div class="tool-pill" data-tech="React">
+              <span class="tool-dot react-dot"></span>
+              <span class="tool-name">React</span>
+            </div>
+            <div class="tool-pill" data-tech="TypeScript">
+              <span class="tool-dot ts-dot"></span>
+              <span class="tool-name">TypeScript</span>
+            </div>
+            <div class="tool-pill" data-tech="Next.js">
+              <span class="tool-dot next-dot"></span>
+              <span class="tool-name">Next.js</span>
+            </div>
+            <div class="tool-pill" data-tech="TailwindCSS">
+              <span class="tool-dot tailwind-dot"></span>
+              <span class="tool-name">TailwindCSS</span>
+            </div>
+            <div class="tool-pill" data-tech="Node.js">
+              <span class="tool-dot node-dot"></span>
+              <span class="tool-name">Node.js</span>
+            </div>
+            <div class="tool-pill" data-tech="CSS3 / Vanilla">
+              <span class="tool-dot css-dot"></span>
+              <span class="tool-name">Modern CSS</span>
+            </div>
+            <div class="tool-pill" data-tech="Git & GitHub">
+              <span class="tool-dot git-dot"></span>
+              <span class="tool-name">Git</span>
+            </div>
+            <div class="tool-pill" data-tech="VS Code">
+              <span class="tool-dot vscode-dot"></span>
+              <span class="tool-name">VS Code</span>
+            </div>
+            <div class="tool-pill" data-tech="GraphQL">
+              <span class="tool-dot gql-dot"></span>
+              <span class="tool-name">GraphQL</span>
+            </div>
+            <div class="tool-pill" data-tech="Web Accessibility">
+              <span class="tool-dot a11y-dot"></span>
+              <span class="tool-name">WCAG A11y</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Case Studies</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-desc">Selected works blending engineering precision with aesthetic elegance.</p>
+        </div>
+
+        <div class="projects-list">
+          <!-- Project 1 (Z-Pattern: Content Left, Wireframe Preview Right) -->
+          <article class="project-showcase project-left" data-glow>
+            <div class="project-content-col">
+              <span class="project-meta-label">Featured Project</span>
+              <h3 class="project-title">Example Project</h3>
+
+              <div class="project-desc-card glass-panel">
+                <p>
+                  A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently
+                  played tracks, and detailed audio information about each track. Create and save new playlists of
+                  recommended tracks based on your existing playlists and more.
+                </p>
+              </div>
+
+              <div class="project-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Spotify API</span>
+                <span class="tech-tag">Chart.js</span>
+                <span class="tech-tag">Web Audio</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="icon-link-btn"
+                  aria-label="Spotify Project Source Code on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                  </svg>
+                </a>
+                <a href="#projects" class="icon-link-btn" aria-label="Live Demo Preview">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Wireframe / Mockup Interactive Frame Right -->
+            <div class="project-mockup-col">
+              <div class="browser-window">
+                <div class="browser-header">
+                  <div class="window-controls">
+                    <span class="control-dot red"></span>
+                    <span class="control-dot yellow"></span>
+                    <span class="control-dot green"></span>
+                  </div>
+                  <div class="browser-address">https://spotify-visualizer.app</div>
+                </div>
+                <div class="browser-viewport wireframe-viewport">
+                  <!-- Wireframe Layout Structure matching Figma preview -->
+                  <div class="wf-grid">
+                    <div class="wf-box wf-cross-box">
+                      <div class="cross-line cross-1"></div>
+                      <div class="cross-line cross-2"></div>
+                      <span class="wf-label">Top Artists & Audio Analysis</span>
+                    </div>
+                    <div class="wf-details">
+                      <div class="wf-line wf-line-long"></div>
+                      <div class="wf-line wf-line-med"></div>
+                      <div class="wf-btn-mock">
+                        <span>VIEW STATS</span>
+                      </div>
+                      <div class="wf-bars">
+                        <div class="wf-bar" style="height: 60%"></div>
+                        <div class="wf-bar" style="height: 90%"></div>
+                        <div class="wf-bar" style="height: 45%"></div>
+                        <div class="wf-bar" style="height: 75%"></div>
+                        <div class="wf-bar" style="height: 100%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 (Z-Pattern: Mockup Left, Content Right) -->
+          <article class="project-showcase project-right" data-glow>
+            <!-- Wireframe / Mockup Interactive Frame Left -->
+            <div class="project-mockup-col">
+              <div class="browser-window">
+                <div class="browser-header">
+                  <div class="window-controls">
+                    <span class="control-dot red"></span>
+                    <span class="control-dot yellow"></span>
+                    <span class="control-dot green"></span>
+                  </div>
+                  <div class="browser-address">https://dashboard-analytics.cloud</div>
+                </div>
+                <div class="browser-viewport wireframe-viewport">
+                  <div class="wf-sidebar-layout">
+                    <div class="wf-sidebar">
+                      <div class="wf-icon-item"></div>
+                      <div class="wf-icon-item"></div>
+                      <div class="wf-icon-item"></div>
+                    </div>
+                    <div class="wf-main-content">
+                      <div class="wf-grid-top">
+                        <div class="wf-stat-card"></div>
+                        <div class="wf-stat-card"></div>
+                      </div>
+                      <div class="wf-cross-box wf-wide-box">
+                        <div class="cross-line cross-1"></div>
+                        <div class="cross-line cross-2"></div>
+                        <span class="wf-label">Cluster Health & Metrics</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content-col">
+              <span class="project-meta-label">Featured Project</span>
+              <h3 class="project-title">Example Project</h3>
+
+              <div class="project-desc-card glass-panel">
+                <p>
+                  A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently
+                  played tracks, and detailed audio information about each track. Create and save new playlists of
+                  recommended tracks based on your existing playlists and more.
+                </p>
+              </div>
+
+              <div class="project-tags">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">TailwindCSS</span>
+                <span class="tech-tag">D3.js</span>
+                <span class="tech-tag">REST API</span>
+                <span class="tech-tag">Vercel</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="icon-link-btn"
+                  aria-label="Project Source Code on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                  </svg>
+                </a>
+                <a href="#projects" class="icon-link-btn" aria-label="Live Demo Preview">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-container">
+        <div class="contact-card glass-panel" data-glow>
+          <div class="contact-header">
+            <span class="section-tag">Let's Connect</span>
+            <h2 class="contact-title">Contact</h2>
+            <p class="contact-text">
+              I'm currently looking to join a cross-functional team that values improving people's lives through
+              accessible design. Whether you have a question, opportunity, or just want to say hi, I'll try my best to
+              get back to you!
+            </p>
+          </div>
+
+          <!-- Email Action Box -->
+          <div class="email-action-box">
+            <div class="email-address-wrapper">
+              <span class="email-label">Direct Email</span>
+              <span class="email-value" id="emailText">hello.developer@example.com</span>
+            </div>
+            <div class="email-btn-group">
+              <button class="btn-copy-email" id="copyEmailBtn" aria-label="Copy email address">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="copy-icon">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span class="copy-text">Copy</span>
+              </button>
+              <a href="mailto:hello.developer@example.com" class="btn-say-hello">
+                Say Hello
+                <svg viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Message Form -->
+          <form class="contact-form" id="contactForm" onsubmit="event.preventDefault(); window.handleContactSubmit();">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="senderName">Your Name</label>
+                <input type="text" id="senderName" name="name" required placeholder="Alex Turner" autocomplete="name">
+              </div>
+              <div class="form-field">
+                <label for="senderEmail">Your Email</label>
+                <input type="email" id="senderEmail" name="email" required placeholder="alex@example.com"
+                  autocomplete="email">
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="senderMessage">Message</label>
+              <textarea id="senderMessage" name="message" rows="4" required
+                placeholder="Tell me about your project or team..."></textarea>
+            </div>
+            <button type="submit" class="btn-submit-message" id="submitBtn">
+              <span>Send Message</span>
+              <svg viewBox="0 0 20 20" fill="currentColor">
+                <path
+                  d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+              </svg>
+            </button>
+            <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+          </form>
+
+          <!-- Social Links Grid -->
+          <div class="social-links-grid">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-pill"
+              aria-label="GitHub Profile">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-pill"
+              aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-pill"
+              aria-label="Twitter Profile">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+              <span>Twitter / X</span>
+            </a>
+            <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="social-pill"
+              aria-label="Dribbble Portfolio">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm10.134 10.976c-.273-.038-2.614-.351-5.185.719-.186-.411-.383-.822-.593-1.229 3.092-1.397 4.298-3.087 4.417-3.262 1.34 1.831 2.052 4.093 1.361 3.772zm-3.048-5.334c-.159.208-1.353 1.737-4.27 3.036-1.579-2.793-3.284-5.15-3.483-5.429 1.954-.741 4.148-.77 6.174.072.589.655 1.123 1.439 1.579 2.321zm-9.525-4.103c.205.286 1.91 2.64 3.492 5.419-2.709.84-5.599.854-5.887.854-.038 0-.077 0-.115 0-.038-.724.085-1.442.368-2.115 1.096-1.745 2.766-3.133 4.142-4.158zm-7.464 5.92c.32 0 3.328-.016 6.242-.907.228.441.442.887.643 1.334-3.551 1.066-6.938 3.513-7.234 3.737-.565-1.248-.82-2.607-.751-3.967.366-.067.733-.133 1.1-.197zm.372 6.012c.319-.234 3.498-2.52 7.039-3.557.943 2.508 1.481 5.163 1.603 5.801-2.909 1.139-6.02.836-8.642-2.244zm10.531 8.871c-.139-.705-.694-3.321-1.611-5.787 2.451-.99 4.67-.714 4.931-.679-.387 2.754-2.196 5.093-3.32 6.466z" />
+              </svg>
+              <span>Dribbble</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <svg viewBox="0 0 40 40" width="28" height="28" fill="none">
+            <rect width="40" height="40" rx="8" fill="#1e1838" stroke="#8b5cf6" stroke-width="1.5" />
+            <path d="M14 13H26L18 20.5L26 27H14" stroke="#c084fc" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          <span class="footer-brand-title">Developer Portfolio</span>
+        </div>
+        <p class="footer-copy">Crafted with modern HTML5, Vanilla CSS & ES6+. Based on Figma design.</p>
+      </div>
+
+      <div class="footer-right">
+        <div class="time-display">
+          <span class="pulse-indicator"></span>
+          <span>Local Time: <strong id="liveTime">--:--:--</strong></span>
+        </div>
+        <a href="#hero" class="back-to-top" aria-label="Back to top">
+          <span>Top</span>
+          <svg viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+              clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
